@@ -3,6 +3,7 @@
   "version": "2.3.4",
   "description": "Convert between quantities in different units",
   "main": "lib",
+  "types": "lib/index.d.ts",
   "dependencies": {
     "lodash.keys": "2.3.x",
     "lodash.foreach": "2.3.x"
