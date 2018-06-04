@@ -130,14 +130,14 @@ declare module 'convert-units' {
       exclude?: TUnit[];
       cutOffNumber?: number;
     }): { val: number; unit: string; singular: string; plural: string };
-    getUnit<T extends TUnit>(
-      abbr: T,
+    getUnit(
+      abbr: string,
     ): {
-      abbr: T;
+      abbr: TUnit;
       measure: TMeasure;
       system: TSystem;
       unit: { name: { singular: string; plural: string }; to_anchor: number };
-    };
+    } | undefined;
     describe<T extends TUnit>(
       abbr: T,
     ): { abbr: T; measure: TMeasure; system: TSystem; singular: string; plural: string };
